@@ -37,7 +37,7 @@
   font-size: $type-size-3;
   color: mix(#fff,$primary-color, 40%);
   border-bottom: 1px solid $border-color;
-  font-family: $serif;
+  font-family: TAEBAEKmilkyway;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -46,11 +46,11 @@
 
 .archive__item-title {
   margin-bottom: 0.9em;
-  font-family: $sans-serif-narrow;
+  font-family: TAEBAEKmilkyway;
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: $cute;
+  font-family: TAEBAEKmilkyway;
   font-size: $type-size-4;
 
   a[rel="permalink"]::before {
@@ -105,7 +105,7 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $caption-font-family;
+  font-family: TAEBAEKmilkyway;
   font-size: $type-size-8;
   background: #000;
   text-align: right;
