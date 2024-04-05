@@ -18,48 +18,57 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "STL" %}
-                        <li><a href="/categories/stl" class="">C++ STL & 표준 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "C++ games" %}
-                        <li><a href="/categories/cpp-games" class="">C++ 연습 문제 패키지 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Cpp Network" %}
-                        <li><a href="/categories/cpp-network" class="">C++ Boost.Asio 네트워크 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "C Sharp" %}
-                        <li><a href="/categories/csharp" class="">C # ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
                     {% if category[0] == "C" %}
                         <li><a href="/categories/c" class="">C ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">Systems</span>
+                            <ul>
+                                {% for category in site.categories %}
+                                    {% if category[0] == "Systems" %}
+                                        <li><a href="/categories/systems" class=""> Systems ({{category[1].size}})</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+
+        <span class="nav__sub-title">Frameworks</span>
+                    <ul>
+                        {% for category in site.categories %}
+                            {% if category[0] == "Framework" %}
+                                <li><a href="/categories/frameworks" class=""> Frameworks ({{category[1].size}})</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+
         <span class="nav__sub-title">Design Pattern</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Design Pattern" %}
-                        <li><a href="/categories/designPattern" class=""> Design Pattern ({{category[1].size}})</a></li>
+                        <li><a href="/categories/design-pattern" class=""> Design Pattern ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
+
+
+        <span class="nav__sub-title">English</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "English" %}
+                        <li><a href="/categories/english" class=""> English ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+       <span class="nav__sub-title">Jordy's Choice (Recipes)</span>
+           <ul>
+               {% for category in site.categories %}
+                   {% if category[0] == "recipes" %}
+                       <li><a href="/categories/recipes" class=""> Recipes ({{category[1].size}})</a></li>
+                   {% endif %}
+               {% endfor %}
+           </ul>
       </li>
   </ul>
 </nav>
